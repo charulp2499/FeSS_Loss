@@ -1,4 +1,7 @@
 import os
+# os.environ['CUDA_VISIBLE_DEVICES'] = '6'
+
+
 import numpy as np
 import tensorflow as tf
 from tqdm.auto import tqdm
@@ -8,6 +11,9 @@ from codes.model import UNET3D
 from codes.data_load import *
 from codes.metrics import *
 from codes.Fess import *
+print(tf.__version__)
+
+
 
 # Set random seeds for reproducibility
 np.random.seed(42)
