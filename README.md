@@ -13,6 +13,7 @@ Medical image segmentation is a critical process in the field of medical imaging
 - Superior performance in limited annotated data scenarios
 
 ## Getting Started
+
 ### Prerequisites
 - Python 3.12.0
 - TensorFlow 2.12.0
@@ -27,6 +28,11 @@ pip install -r requirements.txt
 
 ## Datasets
 
+## Usage
+
+# File Structure:
+
+# Step-by-step intruction for running files:
 
 ## Experiments and Results
 
