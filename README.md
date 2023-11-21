@@ -1,6 +1,3 @@
-Certainly! Here's a basic README file template based on the information provided in your research paper:
-
-```markdown
 # FESS Loss: Feature-Enhanced Spatial Segmentation Loss
 
 ## Introduction
@@ -71,6 +68,4 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgments
 - Acknowledge any resources, libraries, or datasets used in your research.
 - Include a link to the original research paper.
-```
 
-Please adjust the placeholders like `charulp2499/FeSS_Loss`, `predictions`, and `ground_truth` based on your actual GitHub repository, variables, and paths.
