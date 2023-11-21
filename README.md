@@ -13,8 +13,8 @@ Medical image segmentation is a critical process in the field of medical imaging
 
 ## Getting Started
 ### Prerequisites
-- Python 3.x
-- Required dependencies (list them if any)
+- Python 3.12.0
+- TensorFlow 2.12.0
 
 ### Installation
 Clone the repository and install the dependencies:
