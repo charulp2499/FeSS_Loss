@@ -30,9 +30,9 @@ pip install -r requirements.txt
 
 ## Usage
 
-# File Structure:
+### File Structure:
 
-# Step-by-step intruction for running files:
+### Step-by-step intruction for running files:
 
 ## Experiments and Results
 
