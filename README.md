@@ -4,7 +4,7 @@
 ## Introduction
 This repository contains the implementation of the Feature-Enhanced Spatial Segmentation Loss (FESS Loss) proposed in the research paper titled "FESS Loss: Feature-Enhanced Spatial Segmentation Loss for Optimizing Medical Image Analysis." FESS Loss is designed to improve the accuracy and precision of medical image segmentation by combining contrastive learning with the spatial accuracy provided by the Dice loss.
 
-<img src="https://github.com/charulp2499/FeSS_Loss/blob/main/Readme_Supply/FlowChart.svg" alt="Flowchart" />
+<img src="https://raw.githubusercontent.com/charulp2499/FeSS_Loss/main/Readme_Supply/Flowchart.svg" alt="Flowchart" />
 
 
 ## Abstract
