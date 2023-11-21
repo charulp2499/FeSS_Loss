@@ -21,49 +21,18 @@ Clone the repository and install the dependencies:
 
 ```bash
 git clone https://github.com/charulp2499/FeSS_Loss.git
-cd FeSS_Loss
 pip install -r requirements.txt
 ```
 
-### Usage
-To use FESS Loss in your project, follow these steps:
-
-1. Import the FESS Loss module:
-
-```python
-from fess_loss import FESSLoss
-```
-
-2. Initialize FESS Loss:
-
-```python
-fess_loss = FESSLoss()
-```
-
-3. Use it in your training loop:
-
-```python
-# Example code to use FESS Loss
-loss = fess_loss.calculate_loss(predictions, ground_truth)
-# Your backpropagation and optimization steps here
-```
-
-Make sure to replace `predictions` and `ground_truth` with your actual model predictions and ground truth labels.
 
 ## Experiments and Results
-Summarize the experiments conducted and showcase the results. Include visualizations or tables if possible.
 
-## Future Work
-Discuss potential future improvements or extensions to your work.
 
 ## Contributors
-- Charulkumar Chodvadiya
-- Navyansh Mahla
-- Kinshuk Gaurav Singh
-- Kshitij Sharad Jadhav
+Charulkumar Chodvadiya, Navyansh Mahla, Kinshuk Gaurav Singh, Kshitij Sharad Jadhav
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+<!-- This project is licensed under the [](LICENSE). -->
 
 ## Acknowledgments
 - Acknowledge any resources, libraries, or datasets used in your research.
