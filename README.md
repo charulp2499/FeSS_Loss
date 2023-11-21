@@ -28,6 +28,9 @@ pip install -r requirements.txt
 
 ## Datasets
 
+We used the high-quality multi-modal MRI scans from the 2016 and 2017 BraTs datasets, encompassing 274 and 285 patients, respectively, with modalities including T1, T1-weighted post-contrast, T2, and FLAIR sequences. Emphasizing the FLAIR modality, the dataset covers diverse tumor shapes, sizes, and locations. Additionally, the AbdomenCT-1K dataset, featuring over a thousand abdominal CT scans, is used to assess the generalizability of the approach. For convenience, you can download the datasets from the following links: [BraTs 2016](link_to_brats2016), [BraTs 2017](link_to_brats2017), and [AbdomenCT-1K](https://github.com/JunMa11/AbdomenCT-1K). Please cite the respective papers when using these datasets in your work.
+
+
 ## Usage
 
 ### File Structure:
@@ -44,4 +47,3 @@ Charulkumar Chodvadiya, Navyansh Mahla, Kinshuk Gaurav Singh, Kshitij Sharad Jad
 <!-- This project is licensed under the [](LICENSE). -->
 
 
-</div>
