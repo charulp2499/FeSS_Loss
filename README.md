@@ -32,9 +32,51 @@ We utilized the high-quality multi-modal MRI scans from the [BraTs 2016](https:/
 
 ## Usage
 
-### File Structure:
 
-### Step-by-step intruction for running files:
+### Code File Structure
+
+The code is organized into a structured file hierarchy to enhance clarity and maintainability. Here's a breakdown of the main code file structure:
+
+```
+│
+├───Main Code
+│   │───main.py
+│   │───results_vis.py
+│   │───Test.py
+│   └───codes
+│       │───data_load.py
+│       │───Fess.py
+│       │───metrics.py
+│       └───model.py
+```
+
+### Description:
+
+- **Main Code:**
+  - **main.py:** The primary script for training the model using our approach. Running this file initiates the training process.
+  - **Test.py:** Script for generating test results using pretrained model weights. Requires input of pretrained model weights.
+  - **results_vis.py:** Script for visualizing test results, providing insights into model performance against different baseline models.
+  
+
+- **codes:**
+  - **data_load.py:** Python script for loading data and splitting data into mini batches.
+  - **Fess.py:** **Python script containing the implementation of the Fess loss function, a main component of our approach.**
+  - **metrics.py:** Python script for calculating evaluation metrics relevant to the project.
+  - **model.py:** Python script defining the main U-Net 3D model used in our approach.
+
+### How to Use:
+
+1. **Training the Model:**
+   - Execute `main.py` to initiate the training process using our approach.
+
+2. **Generating Test Results:**
+   - Run `Test.py` by providing pretrained model weights as input to generate test results.
+
+3. **Visualizing Results:**
+   - Execute `results_vis.py` to visualize test results. This script compares the performance of our approach against different baseline models.
+
+Feel free to explore each module and adapt the code to fit your project's requirements. Refer to individual script comments for more detailed information.
+
 
 ## Experiments and Results
 
@@ -44,5 +86,6 @@ Charulkumar Chodvadiya, Navyansh Mahla, Kinshuk Gaurav Singh, Kshitij Sharad Jad
 
 ## License
 <!-- This project is licensed under the [](LICENSE). -->
+
 
 
