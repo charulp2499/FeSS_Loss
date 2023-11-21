@@ -25,10 +25,9 @@ Clone the repository and install the dependencies:
 git clone https://github.com/charulp2499/FeSS_Loss.git
 pip install -r requirements.txt
 ```
-
 ## Datasets
 
-We used the high-quality multi-modal MRI scans from the 2016 and 2017 BraTs datasets, encompassing 274 and 285 patients, respectively, with modalities including T1, T1-weighted post-contrast, T2, and FLAIR sequences. Emphasizing the FLAIR modality, the dataset covers diverse tumor shapes, sizes, and locations. Additionally, the AbdomenCT-1K dataset, featuring over a thousand abdominal CT scans, is used to assess the generalizability of the approach. For convenience, you can download the datasets from the following links: [BraTs 2016](link_to_brats2016), [BraTs 2017](link_to_brats2017), and [AbdomenCT-1K](https://github.com/JunMa11/AbdomenCT-1K). Please cite the respective papers when using these datasets in your work.
+We utilized the high-quality multi-modal MRI scans from the [BraTs 2016](https://www.smir.ch/BRATS/Start2016) and [BraTs 2017](https://www.med.upenn.edu/sbia/brats2017/data.html) datasets, comprising 274 and 285 patients, respectively. With a focus on the FLAIR modality, our dataset encompasses a variety of tumor shapes, sizes, and locations. Furthermore, to evaluate the generalizability of our approach, we incorporated the [AbdomenCT-1K](https://github.com/JunMa11/AbdomenCT-1K) dataset, which consists of over a thousand abdominal CT scans. your work.
 
 
 ## Usage
