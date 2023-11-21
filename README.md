@@ -72,10 +72,8 @@ The code is organized into a structured file hierarchy to enhance clarity and ma
 2. **Generating Test Results:**
    - Run `Test.py` by providing pretrained model weights as input to generate test results.
 
-3. **Visualizing Results:**
-   - Execute `results_vis.py` to visualize test results. This script compares the performance of our approach against different baseline models.
 
-Feel free to explore each module and adapt the code to fit your project's requirements. Refer to individual script comments for more detailed information.
+<!-- Feel free to explore each module and adapt the code to fit your project's requirements. Refer to individual script comments for more detailed information. -->
 
 
 ## Experiments and Results
