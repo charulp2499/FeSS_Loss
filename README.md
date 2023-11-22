@@ -79,66 +79,28 @@ The code is organized into a structured file hierarchy to enhance clarity and ma
 
 ## Experiments and Results
 
+
 ### Table: Segmentation Performance
-```latex
 
-\begin{table}[!h]
-\centering
-\footnotesize
-\hspace{0.1cm}
-\begin{tabularx}{\textwidth}{| p{2.5cm} | X | X | X | X | p{2.3cm} | X |} \hline
-\textbf{Dataset} & \textbf{Loss Function} & \textbf{DICE cofficient} &  \textbf{IoU @0.5} & \textbf{Precision} & \textbf{Specificity} & \textbf{Sensitivity}\\
-\hline
-\hline
+| **Dataset**       | **Loss Function** | **DICE coefficient** | **IoU @0.5** | **Precision** | **Specificity** | **Sensitivity** |
+|-------------------|-------------------|----------------------|--------------|---------------|------------------|------------------|
+| **BraTs 2016**    | Our Loss          | 0.85 ± 0.02          | 0.75 ± 0.03   | 0.80 ± 0.02   | 0.98 ± 0.001    | 0.91 ± 0.01      |
+|                   | Vanilla Dice      | 0.69 ± 0.01          | 0.57 ± 0.03   | 0.70 ± 0.04   | 0.97 ± 0.003    | 0.72 ± 0.02      |
+|                   | simCLR            | 0.70 ± 0.02          | 0.57 ± 0.01   | 0.80 ± 0.03   | 0.99 ± 0.001    | 0.67 ± 0.02      |
+|                   | infoNCE           | 0.71 ± 0.02          | 0.58 ± 0.02   | 0.76 ± 0.03   | 0.99 ± 0.001    | 0.69 ± 0.02      |
+| **BraTs 2017**    | Our Loss          | 0.82 ± 0.03          | 0.71 ± 0.02   | 0.75 ± 0.04   | 0.97 ± 0.001    | 0.93 ± 0.01      |
+|                   | Vanilla Dice      | 0.76 ± 0.02          | 0.63 ± 0.02   | 0.71 ± 0.04   | 0.97 ± 0.001    | 0.85 ± 0.02      |
+|                   | simCLR            | 0.77 ± 0.01          | 0.62 ± 0.03   | 0.80 ± 0.04   | 0.98 ± 0.002    | 0.77 ± 0.01      |
+|                   | infoNCE           | 0.77 ± 0.02          | 0.64 ± 0.02   | 0.80 ± 0.03   | 0.98 ± 0.002    | 0.78 ± 0.04      |
+| **Combined BraTs**| Our Loss          | 0.83 ± 0.03          | 0.69 ± 0.03   | 0.86 ± 0.04   | 0.99 ± 0.001    | 0.77 ± 0.02      |
+|                   | Vanilla Dice      | 0.73 ± 0.02          | 0.59 ± 0.02   | 0.76 ± 0.06   | 0.99 ± 0.002    | 0.74 ± 0.03      |
+|                   | simCLR            | 0.71 ± 0.01          | 0.58 ± 0.02   | 0.94 ± 0.03   | 0.99 ± 0.002    | 0.62 ± 0.03      |
+|                   | infoNCE           | 0.81 ± 0.01          | 0.68 ± 0.01   | 0.92 ± 0.03   | 0.99 ± 0.001    | 0.74 ± 0.02      |
+| **AbdomenCT-1K**  | Our Loss          | 0.63 ± 0.01          | 0.46 ± 0.01   | 0.60 ± 0.02   | 0.96 ± 0.003    | 0.68 ± 0.04      |
+|                   | Vanilla Dice      | 0.60 ± 0.04          | 0.43 ± 0.04   | 0.55 ± 0.05   | 0.95 ± 0.004    | 0.67 ± 0.03      |
+|                   | simCLR            | 0.61 ± 0.01          | 0.44 ± 0.01   | 0.60 ± 0.04   | 0.96 ± 0.004    | 0.63 ± 0.04      |
+|                   | infoNCE           | 0.61 ± 0.01          | 0.44 ± 0.01   | 0.55 ± 0.03   | 0.95 ± 0.009    | 0.69 ± 0.04      |
 
-\multirow{\textbf{BraTs 2016}} & \textbf{Our Loss} & \textbf{0.85} \pm \textbf{0.02} & \textbf{0.75} \pm \textbf{0.03} & \textbf{0.80} \pm \textbf{0.02} & 0.98 \pm 0.001 & \textbf{0.91} \pm \textbf{0.01}\\
-\cline{2-7}
-& \textbf{Vanilla Dice} & 0.69 \pm 0.01 & 0.57 \pm 0.03 & 0.70 \pm 0.04 & 0.97 \pm 0.003 & 0.72 \pm 0.02 \\
-\cline{2-7}
-& \textbf{simCLR} & 0.70 \pm 0.02 & 0.57 \pm 0.01 & \textbf{0.80} \pm \textbf{0.03} & \textbf{0.99} \pm \textbf{0.001} & 0.67 \pm 0.02\\
-\cline{2-7}
-& \textbf{infoNCE} & 0.71\pm 0.02 & 0.58 \pm 0.02 & 0.76 \pm 0.03 & \textbf{0.99} \pm \textbf{0.001} & 0.69 \pm 0.02\\
-% \cline{2-7}
-\hline
-\hline
-
-\multirow{\textbf{BraTs 2017}} & \textbf{Our Loss} & \textbf{0.82} \pm \textbf{0.03} & \textbf{0.71} \pm \textbf{0.02} & 0.75 \pm 0.04 & 0.97 \pm 0.001 & \textbf{0.93} \pm \textbf{0.01}\\
-\cline{2-7}
-& \textbf{Vanilla Dice} & 0.76 \pm 0.02 & 0.63 \pm 0.02 & 0.71 \pm 0.04 & 0.97 \pm 0.001 & 0.85 \pm 0.02\\
-\cline{2-7}
-& \textbf{simCLR} & 0.77 \pm 0.01 & 0.62 \pm 0.03 & \textbf{0.80} \pm \textbf{0.04} & \textbf{0.98} \pm \textbf{0.002} & 0.77 \pm 0.01 \\
-\cline{2-7}
-& \textbf{infoNCE}& 0.77 \pm 0.02 & 0.64 \pm 0.02 & \textbf{0.80} \pm \textbf{0.03} & \textbf{0.98} \pm \textbf{0.002} & 0.78 \pm 0.04\\
-% \cline{2-7}
-\hline
-\hline
-
-\multirow{\textbf{Combined BraTs}} & \textbf{Our Loss} & \textbf{0.83} \pm \textbf{0.03} & \textbf{0.69 }\pm \textbf{0.03} & 0.86 \pm 0.04 & \textbf{0.99} \pm \textbf{0.001} & \textbf{0.77} \pm \textbf{0.02} \\
-\cline{2-7}
-& \textbf{Vanilla Dice} & 0.73 \pm 0.02 & 0.59 \pm 0.02 & 0.76 \pm 0.06 & \textbf{0.99} \pm \textbf{0.002} & 0.74 \pm 0.03 \\
-\cline{2-7}
-& \textbf{simCLR}& 0.71 \pm 0.01 & 0.58 \pm 0.02 & \textbf{0.94} \pm \textbf{0.03} & \textbf{0.99} \pm \textbf{0.002} & 0.62 \pm 0.03\\
-\cline{2-7}
-& \textbf{infoNCE} & 0.81 \pm 0.01 & 0.68 \pm 0.01 & 0.92 \pm 0.03 & \textbf{0.99} \pm \textbf{0.001} & 0.74 \pm 0.02 \\
-\hline
-\hline
-
-\multirow{\textbf{AbdomenCT-1K}} & \textbf{Our Loss} & \textbf{0.63} \pm \textbf{0.01}  & \textbf{0.46} \pm \textbf{0.01} & \textbf{0.60}  \pm \textbf{0.02}  & \textbf{0.96 } \pm \textbf{0.003}  & 0.68 \pm 0.04\\
-\cline{2-7}
-& \textbf{Vanilla Dice}& 0.60  \pm 0.04 & 0.43  \pm 0.04 & 0.55  \pm 0.05 & 0.95  \pm 0.004 & 0.67  \pm 0.03\\
-\cline{2-7}
-& \textbf{simCLR} & 0.61  \pm 0.01 & 0.44  \pm 0.01 & \textbf{0.60}  \pm \textbf{0.04}  & \textbf{0.96}  \pm \textbf{0.004}  & 0.63  \pm 0.04\\
-\cline{2-7}
-& \textbf{infoNCE} & 0.61  \pm 0.01  & 0.44  \pm 0.01 & 0.55  \pm 0.03 & 0.95  \pm 0.009  & \textbf{0.69}  \pm \textbf{0.04} \\
-\hline
-    
-\end{tabularx}
-\label{tab:comp}
-\caption{\small Quantitative Test Results for Segmentation Performance with FESS Loss and Different Functions on Medical Image Datasets}
-\end{table}
-
-
-```
 
 
 ## Contributors
