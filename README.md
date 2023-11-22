@@ -4,8 +4,7 @@
 ## Introduction
 This repository contains the implementation of the Feature-Enhanced Spatial Segmentation Loss (FESS Loss) proposed in the research paper titled "FESS Loss: Feature-Enhanced Spatial Segmentation Loss for Optimizing Medical Image Analysis." FESS Loss is designed to improve the accuracy and precision of medical image segmentation by combining contrastive learning with the spatial accuracy provided by the Dice loss.
 
-<!-- <img src="Readme_Supply\flowchart.svg" alt="Flowchart" /> -->
-<img src="https://raw.githubusercontent.com/charulp2499/FeSS_Loss/main/Readme_Supply/Flowchart.svg" alt="Flowchart" />
+
 
 
 ## Abstract
@@ -35,6 +34,10 @@ We utilized the high-quality multi-modal MRI scans from the [BraTs 2016](https:/
 
 
 ## Usage
+
+### Flow Diagram of Working
+<!-- <img src="Readme_Supply\flowchart.svg" alt="Flowchart" /> -->
+<img src="https://raw.githubusercontent.com/charulp2499/FeSS_Loss/main/Readme_Supply/Flowchart.svg" alt="Flowchart" />
 
 
 ### Code File Structure
@@ -75,9 +78,6 @@ The code is organized into a structured file hierarchy to enhance clarity and ma
 
 2. **Generating Test Results:**
    - Run `Test.py` by providing pretrained model weights as input to generate test results.
-
-
-<!-- Feel free to explore each module and adapt the code to fit your project's requirements. Refer to individual script comments for more detailed information. -->
 
 
 ## Experiments and Results
