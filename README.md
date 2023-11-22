@@ -103,6 +103,8 @@ For a more in-depth understanding of our methodology, you can explore our codeba
 |                   | simCLR            | 0.61 ± 0.01          | 0.44 ± 0.01   | 0.60 ± 0.04   | 0.96 ± 0.004    | 0.63 ± 0.04      |
 |                   | infoNCE           | 0.61 ± 0.01          | 0.44 ± 0.01   | 0.55 ± 0.03   | 0.95 ± 0.009    | 0.69 ± 0.04      |
 
+### mean and standard error across varied sample sizes plot
+<img src="Readme_Supply\Mean_SEM_Varied_Data_Samples.svg" alt="SEM Diagram" />
 
 
 ## Contributors
