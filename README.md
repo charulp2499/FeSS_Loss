@@ -32,11 +32,6 @@ We utilized the high-quality multi-modal MRI scans from the [BraTs 2016](https:/
 
 ## Usage
 
-### WOrking Flow Diagram
-<!-- <img src="Readme_Supply\flowchart.svg" alt="Flowchart" /> -->
-<img src="https://raw.githubusercontent.com/charulp2499/FeSS_Loss/main/Readme_Supply/Flowchart.svg" alt="Flowchart" />
-
-
 ### Code File Structure
 
 The code is organized into a structured file hierarchy to enhance clarity and maintainability. Here's a breakdown of the main code file structure:
@@ -76,11 +71,18 @@ The code is organized into a structured file hierarchy to enhance clarity and ma
 2. **Generating Test Results:**
    - Run `Test.py` by providing pretrained model weights as input to generate test results.
 
+## Flow diagram of our approach
+
+<!-- <img src="Readme_Supply\flowchart.svg" alt="Flowchart" /> -->
+<img src="https://raw.githubusercontent.com/charulp2499/FeSS_Loss/main/Readme_Supply/Flowchart.svg" alt="Flowchart" />
 
 ## Experiments and Results
 
+We used a batch size (N) of 5 to find a suitable equilibrium between computational efficiency and optimal model performance. Additionally, a learning rate (η) of 1e-5 was chosen to facilitate effective model convergence. Other crucial hyperparameters, such as ε (set at 1e-5 to ensure smoothness in dice loss) and Temperature Δ (established at 0.5 for contrastive loss to regulate probability spread and concentration), were meticulously selected to bolster the overall robustness of the model.
 
-### Table: Segmentation Performance
+For a more in-depth understanding of our methodology, you can explore our codebase. The comparison table below showcases the results in contrast to baselines. Furthermore, we provide an additional diagram illustrating the performance of our approach compared to baseline performance across various training sample sizes.
+
+### Test Results for Segmentation Performance with FESS Loss and Different loss Functions on Medical Image Dataset
 
 | **Dataset**       | **Loss Function** | **DICE coefficient** | **IoU @0.5** | **Precision** | **Specificity** | **Sensitivity** |
 |-------------------|-------------------|----------------------|--------------|---------------|------------------|------------------|
