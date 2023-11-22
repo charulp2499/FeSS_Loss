@@ -73,8 +73,8 @@ The code is organized into a structured file hierarchy to enhance clarity and ma
 
 ## Flow diagram of our approach
 
-<img src="Readme_Supply\flowchart.svg" alt="Flowchart" />
-<!-- <img src="https://raw.githubusercontent.com/charulp2499/FeSS_Loss/main/Readme_Supply/Flowchart.svg" alt="Flowchart" /> -->
+<!-- <img src="Readme_Supply\flowchart.svg" alt="Flowchart" /> -->
+<img src="https://raw.githubusercontent.com/charulp2499/FeSS_Loss/main/Readme_Supply/Flowchart.svg" alt="Flowchart" />
 
 ## Experiments and Results
 
