@@ -73,8 +73,8 @@ The code is organized into a structured file hierarchy to enhance clarity and ma
 
 ## Flow diagram of our approach
 
-<!-- <img src="Readme_Supply\flowchart.svg" alt="Flowchart" /> -->
-<img src="https://raw.githubusercontent.com/charulp2499/FeSS_Loss/main/Readme_Supply/Flowchart.svg" alt="Flowchart" />
+<img src="Readme_Supply\flowchart.svg" alt="Flowchart" />
+<!-- <img src="https://raw.githubusercontent.com/charulp2499/FeSS_Loss/main/Readme_Supply/Flowchart.svg" alt="Flowchart" /> -->
 
 ## Experiments and Results
 
@@ -104,7 +104,7 @@ For a more in-depth understanding of our methodology, you can explore our codeba
 |                   | infoNCE           | 0.61 ± 0.01          | 0.44 ± 0.01   | 0.55 ± 0.03   | 0.95 ± 0.009    | 0.69 ± 0.04      |
 
 ### mean and standard error across varied sample sizes plot
-<img src="Readme_Supply\Mean_SEM_Varied_Data_Samples.svg" alt="SEM Diagram" />
+<img src="Readme_Supply\SEM_final.png" alt="SEM Diagram" />
 
 
 ## Contributors
