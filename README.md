@@ -4,9 +4,6 @@
 ## Introduction
 This repository contains the implementation of the Feature-Enhanced Spatial Segmentation Loss (FESS Loss) proposed in the research paper titled "FESS Loss: Feature-Enhanced Spatial Segmentation Loss for Optimizing Medical Image Analysis." FESS Loss is designed to improve the accuracy and precision of medical image segmentation by combining contrastive learning with the spatial accuracy provided by the Dice loss.
 
-
-
-
 ## Abstract
 Medical image segmentation is a critical process in the field of medical imaging, playing a pivotal role in diagnosis, treatment, and research. Conventional methods often struggle with balancing spatial precision and comprehensive feature representation. FESS Loss addresses this challenge by integrating the benefits of contrastive learning with the spatial accuracy inherent in the Dice loss. This README provides an overview of the implementation and usage of FESS Loss.
 
@@ -35,7 +32,7 @@ We utilized the high-quality multi-modal MRI scans from the [BraTs 2016](https:/
 
 ## Usage
 
-### Flow Diagram of Working
+### WOrking Flow Diagram
 <!-- <img src="Readme_Supply\flowchart.svg" alt="Flowchart" /> -->
 <img src="https://raw.githubusercontent.com/charulp2499/FeSS_Loss/main/Readme_Supply/Flowchart.svg" alt="Flowchart" />
 
@@ -81,6 +78,67 @@ The code is organized into a structured file hierarchy to enhance clarity and ma
 
 
 ## Experiments and Results
+
+### Table: Segmentation Performance
+```latex
+
+\begin{table}[!h]
+\centering
+\footnotesize
+\hspace{0.1cm}
+\begin{tabularx}{\textwidth}{| p{2.5cm} | X | X | X | X | p{2.3cm} | X |} \hline
+\textbf{Dataset} & \textbf{Loss Function} & \textbf{DICE cofficient} &  \textbf{IoU @0.5} & \textbf{Precision} & \textbf{Specificity} & \textbf{Sensitivity}\\
+\hline
+\hline
+
+\multirow{\textbf{BraTs 2016}} & \textbf{Our Loss} & \textbf{0.85} \pm \textbf{0.02} & \textbf{0.75} \pm \textbf{0.03} & \textbf{0.80} \pm \textbf{0.02} & 0.98 \pm 0.001 & \textbf{0.91} \pm \textbf{0.01}\\
+\cline{2-7}
+& \textbf{Vanilla Dice} & 0.69 \pm 0.01 & 0.57 \pm 0.03 & 0.70 \pm 0.04 & 0.97 \pm 0.003 & 0.72 \pm 0.02 \\
+\cline{2-7}
+& \textbf{simCLR} & 0.70 \pm 0.02 & 0.57 \pm 0.01 & \textbf{0.80} \pm \textbf{0.03} & \textbf{0.99} \pm \textbf{0.001} & 0.67 \pm 0.02\\
+\cline{2-7}
+& \textbf{infoNCE} & 0.71\pm 0.02 & 0.58 \pm 0.02 & 0.76 \pm 0.03 & \textbf{0.99} \pm \textbf{0.001} & 0.69 \pm 0.02\\
+% \cline{2-7}
+\hline
+\hline
+
+\multirow{\textbf{BraTs 2017}} & \textbf{Our Loss} & \textbf{0.82} \pm \textbf{0.03} & \textbf{0.71} \pm \textbf{0.02} & 0.75 \pm 0.04 & 0.97 \pm 0.001 & \textbf{0.93} \pm \textbf{0.01}\\
+\cline{2-7}
+& \textbf{Vanilla Dice} & 0.76 \pm 0.02 & 0.63 \pm 0.02 & 0.71 \pm 0.04 & 0.97 \pm 0.001 & 0.85 \pm 0.02\\
+\cline{2-7}
+& \textbf{simCLR} & 0.77 \pm 0.01 & 0.62 \pm 0.03 & \textbf{0.80} \pm \textbf{0.04} & \textbf{0.98} \pm \textbf{0.002} & 0.77 \pm 0.01 \\
+\cline{2-7}
+& \textbf{infoNCE}& 0.77 \pm 0.02 & 0.64 \pm 0.02 & \textbf{0.80} \pm \textbf{0.03} & \textbf{0.98} \pm \textbf{0.002} & 0.78 \pm 0.04\\
+% \cline{2-7}
+\hline
+\hline
+
+\multirow{\textbf{Combined BraTs}} & \textbf{Our Loss} & \textbf{0.83} \pm \textbf{0.03} & \textbf{0.69 }\pm \textbf{0.03} & 0.86 \pm 0.04 & \textbf{0.99} \pm \textbf{0.001} & \textbf{0.77} \pm \textbf{0.02} \\
+\cline{2-7}
+& \textbf{Vanilla Dice} & 0.73 \pm 0.02 & 0.59 \pm 0.02 & 0.76 \pm 0.06 & \textbf{0.99} \pm \textbf{0.002} & 0.74 \pm 0.03 \\
+\cline{2-7}
+& \textbf{simCLR}& 0.71 \pm 0.01 & 0.58 \pm 0.02 & \textbf{0.94} \pm \textbf{0.03} & \textbf{0.99} \pm \textbf{0.002} & 0.62 \pm 0.03\\
+\cline{2-7}
+& \textbf{infoNCE} & 0.81 \pm 0.01 & 0.68 \pm 0.01 & 0.92 \pm 0.03 & \textbf{0.99} \pm \textbf{0.001} & 0.74 \pm 0.02 \\
+\hline
+\hline
+
+\multirow{\textbf{AbdomenCT-1K}} & \textbf{Our Loss} & \textbf{0.63} \pm \textbf{0.01}  & \textbf{0.46} \pm \textbf{0.01} & \textbf{0.60}  \pm \textbf{0.02}  & \textbf{0.96 } \pm \textbf{0.003}  & 0.68 \pm 0.04\\
+\cline{2-7}
+& \textbf{Vanilla Dice}& 0.60  \pm 0.04 & 0.43  \pm 0.04 & 0.55  \pm 0.05 & 0.95  \pm 0.004 & 0.67  \pm 0.03\\
+\cline{2-7}
+& \textbf{simCLR} & 0.61  \pm 0.01 & 0.44  \pm 0.01 & \textbf{0.60}  \pm \textbf{0.04}  & \textbf{0.96}  \pm \textbf{0.004}  & 0.63  \pm 0.04\\
+\cline{2-7}
+& \textbf{infoNCE} & 0.61  \pm 0.01  & 0.44  \pm 0.01 & 0.55  \pm 0.03 & 0.95  \pm 0.009  & \textbf{0.69}  \pm \textbf{0.04} \\
+\hline
+    
+\end{tabularx}
+\label{tab:comp}
+\caption{\small Quantitative Test Results for Segmentation Performance with FESS Loss and Different Functions on Medical Image Datasets}
+\end{table}
+
+
+```
 
 
 ## Contributors
