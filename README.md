@@ -84,7 +84,7 @@ The code is organized into a structured file hierarchy to enhance clarity and ma
 
 
 ## Contributors
-Charulkumar Chodvadiya, Navyansh Mahla, Kinshuk Gaurav Singh, Kshitij Sharad Jadhav
+Charulkumar Chodvadiya, Kinshuk Gaurav Singh, Navyansh Mahla, Dr Kshitij Jadhav
 
 ## License
 This project is licensed under the [MIT license](LICENSE).
