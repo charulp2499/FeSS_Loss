@@ -87,7 +87,7 @@ The code is organized into a structured file hierarchy to enhance clarity and ma
 Charulkumar Chodvadiya, Navyansh Mahla, Kinshuk Gaurav Singh, Kshitij Sharad Jadhav
 
 ## License
-This project is licensed under the [MIT](LICENSE).
+This project is licensed under the [MIT license](LICENSE).
 
 
 
