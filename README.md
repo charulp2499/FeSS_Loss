@@ -2,10 +2,10 @@
 <div style="text-align: justify">
 
 ## Introduction
-This repository contains the implementation of the Feature-Enhanced Spatial Segmentation Loss (FESS Loss) proposed in the research paper titled "FESS Loss: Feature-Enhanced Spatial Segmentation Loss for Optimizing Medical Image Analysis." FESS Loss is designed to improve the accuracy and precision of medical image segmentation by combining contrastive learning with the spatial accuracy provided by the Dice loss.
+The implementation of the feature-enhanced spatial segmentation loss (FESS Loss) proposed in the research paper titled "FESS Loss: Feature-enhanced spatial segmentation loss for optimizing medical image analysis" is contained in this repository. FESS Loss is a way to make medical image segmentation more accurate and precise by using contrastive learning and Dice loss to improve spatial accuracy.
 
 ## Abstract
-Medical image segmentation is a critical process in the field of medical imaging, playing a pivotal role in diagnosis, treatment, and research. Conventional methods often struggle with balancing spatial precision and comprehensive feature representation. FESS Loss addresses this challenge by integrating the benefits of contrastive learning with the spatial accuracy inherent in the Dice loss. This README provides an overview of the implementation and usage of FESS Loss.
+The process of separating medical images is vital in the realm of medical imaging, assisting in the process of determining health conditions, addressing their treatment, and conducting research. Conventional methods often struggle to achieve a balance between spatial precision and comprehensive feature representations. FESS Loss addresses this challenge by integrating the benefits of contrastive learning with the spatial accuracy inherent in the Dice loss. 
 
 ## Features
 - Integration of contrastive learning for improved feature representation
